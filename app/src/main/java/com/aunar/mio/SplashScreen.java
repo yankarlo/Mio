@@ -18,6 +18,19 @@ public class SplashScreen extends AppCompatActivity {
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(intent);
             }
-        },4000);
+        },3000);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                startActivity(intent);
+            }
+        },3000);
     }
 }

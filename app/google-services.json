@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "365056707385",
+    "firebase_url": "https://appmio-61e4d.firebaseio.com",
+    "project_id": "appmio-61e4d",
+    "storage_bucket": "appmio-61e4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365056707385:android:49fe682040ba85c8",
+        "android_client_info": {
+          "package_name": "com.aunar.mio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365056707385-vfmjuso44h508os6vi9iu9tl91b60g0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYLNTD7lXHSN6hZMZHZA-NfnPqYAYdFPg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

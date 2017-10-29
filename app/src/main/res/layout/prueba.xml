@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aunar.mio.login.SingupActivity"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formulario_de_registro"
+                android:textSize="26dp"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:drawableEnd="@drawable/ic_menu_user"
+                    android:drawableRight="@drawable/ic_menu_user"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contrasena"
+                    android:drawableEnd="@drawable/ic_menu_pass"
+                    android:drawableRight="@drawable/ic_menu_pass"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Spinner
+                android:id="@+id/tipo_documento"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp" style="@style/Widget.AppCompat.Spinner"                >
+
+            </Spinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/identificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/identificacion"
+                    android:drawableEnd="@drawable/ic_text_identificacion"
+                    android:drawableRight="@drawable/ic_text_identificacion"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombres_y_apellidos"
+                    android:drawableEnd="@drawable/ic_text_nombre"
+                    android:drawableRight="@drawable/ic_text_nombre"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/direccion"
+                    android:drawableEnd="@drawable/ic_text_direccion"
+                    android:drawableRight="@drawable/ic_text_direccion"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/numero_tarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/numero_tarjeta"
+                    android:drawableEnd="@drawable/ic_text_numero_tarjeta"
+                    android:drawableRight="@drawable/ic_text_numero_tarjeta"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_button"
+                android:text="@string/action_sign_in_short"
+                android:textColor="@color/white"
+                android:background="@color/dark_blue"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                style="@style/Widget.Design.FloatingActionButton"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

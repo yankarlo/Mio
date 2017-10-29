@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#005d9a"
-    tools:context="com.aunar.mio.SplashScreen">
+    tools:context="com.aunar.mio.SplashScreen"
+    >
 
 
     <pl.droidsonroids.gif.GifImageView
