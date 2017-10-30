@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "365056707385",
-    "firebase_url": "https://appmio-61e4d.firebaseio.com",
-    "project_id": "appmio-61e4d",
-    "storage_bucket": "appmio-61e4d.appspot.com"
+    "project_number": "143109517672",
+    "firebase_url": "https://appmio-2017.firebaseio.com",
+    "project_id": "appmio-2017",
+    "storage_bucket": "appmio-2017.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:365056707385:android:49fe682040ba85c8",
+        "mobilesdk_app_id": "1:143109517672:android:49fe682040ba85c8",
         "android_client_info": {
           "package_name": "com.aunar.mio"
         }
       },
       "oauth_client": [
         {
-          "client_id": "365056707385-vfmjuso44h508os6vi9iu9tl91b60g0j.apps.googleusercontent.com",
+          "client_id": "143109517672-aocfq2g1rp7lhg2q9ld98mlvom0f2ep4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aunar.mio",
+            "certificate_hash": "3e69c8d7e57634f93a3b6159d497bb1fce4a5ca1"
+          }
+        },
+        {
+          "client_id": "143109517672-rgqdr88bk5naefuq7fg612qvjggvsu9j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDYLNTD7lXHSN6hZMZHZA-NfnPqYAYdFPg"
+          "current_key": "AIzaSyBLQMpBly9oZL1yX9vzdbVpkUedDBHThcU"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143109517672-rgqdr88bk5naefuq7fg612qvjggvsu9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

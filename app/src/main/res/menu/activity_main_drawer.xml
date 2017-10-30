@@ -16,21 +16,23 @@
             android:title="Slideshow" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:icon="@drawable/ic_place"
+            android:title="Puntos de recarga" />
+
+        <item
+            android:id="@+id/nav_pqrsdf"
+            android:icon="@drawable/ic_error"
+            android:title="Pqrsdf" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_user"
+            android:title="Login" />
     </group>
 
-    <item android:title="Communicate">
+    <!--<item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_login"
-                android:icon="@drawable/ic_menu_user"
-                android:title="Login" />
+
         </menu>
-    </item>
+    </item>-->
 
 </menu>

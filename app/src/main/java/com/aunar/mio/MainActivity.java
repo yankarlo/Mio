@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,6 +19,7 @@ import android.widget.TextView;
 
 import com.aunar.mio.login.LoginActivity;
 import com.aunar.mio.login.User;
+import com.aunar.mio.maps.PuntosRecargaActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -37,6 +36,7 @@ public class MainActivity extends AppCompatActivity
     private FirebaseAuth auth;
     User us;
     DatabaseReference database = FirebaseDatabase.getInstance().getReference("user");
+    MenuItem login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,16 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         auth = FirebaseAuth.getInstance();
 
+
+
         //user_email = (TextView) findViewById(R.id.user_email);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Menu menu = navigationView.getMenu();
+        login = menu.findItem(R.id.nav_login);
+
         //View header = navigationView.inflateHeaderView(R.layout.nav_header_main);
         View header=navigationView.getHeaderView(0);
         user_email = ((TextView) header.findViewById(R.id.user_email));
@@ -109,6 +114,7 @@ public class MainActivity extends AppCompatActivity
     private void setDataToView(FirebaseUser user) {
         if (user != null){
             user_email.setText(user.getEmail());
+            login.setTitle("Logout");
         }
     }
 
@@ -170,6 +176,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
@@ -178,12 +185,21 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_login) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, PuntosRecargaActivity.class);
             startActivity(intent);
+        } else if (id == R.id.nav_pqrsdf) {
+            Intent intent = new Intent(MainActivity.this, PQRSDFActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_login) {
+
+
+            if (user == null){
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }else{
+                signOut();
+            }
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -211,6 +227,7 @@ public class MainActivity extends AppCompatActivity
         auth.signOut();
         user_email.setText("");
         user_name.setText("Invitado Mio");
+        login.setTitle("Login");
         /*
 // this listener will be called when there is change in firebase user session
         FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {

@@ -17,8 +17,9 @@
     <string name="title_activity_profile">Firebase</string>
     <string name="title_activity_login">Sign in</string>
     <string name="hint_email">Email</string>
+    <string name="hint_name">Nombres</string>
+    <string name="hint_apellidos">Apellidos</string>
     <string name="hint_password">Password</string>
-    <string name="hint_name">Fullname</string>
     <string name="btn_login">LOGIN</string>
     <string name="prompt_password">Please enter your password</string>
     <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
@@ -41,7 +42,17 @@
     <string name="nombres_y_apellidos">Nombres y Apellidos</string>
     <string name="direccion">Direccion</string>
     <string name="numero_tarjeta">Numero tarjeta</string>
-
+    <string name="hint_identificacion">Número de Identificación</string>
+    <string name="hint_tipoid">Tipo de Identificación</string>
+    <string name="hint_tiposolicitud">Tipo de Solicitud</string>
+    <string name="hint_descripcion">Descripción:</string>
+    <string name="enviar_success">Enviado</string>
+    <string name="name_validation_msg">Debe escribir el nombre</string>
+    <string name="apellidos_validation_msg">Debe escribir el apellido</string>
+    <string name="arrova_validation_msg">Valor @ requerido</string>
+    <string name="email_validation_msg">Debe escribir un correo </string>
+    <string name="identificacion_validation_msg">Debe escribir el número de identificación</string>
+    <string name="formulario_pqrsdf">Formulario para instaurar un PQRSF</string>
 
     <string-array name="tipos_documentos">
         <item>Tipo de Documento</item>
@@ -49,5 +60,6 @@
         <item>Pasaporte</item>
         <item>Cédula Extranjera</item>
     </string-array>
+    <string name="title_activity_puntos_recarga">Puntos De Recarga</string>
 
 </resources>
